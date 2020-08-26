@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Djupvik</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="../js/dropDownMenu.js" type="module"></script>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a class="link" href="../index.html">Djupviks Hamn</a></li>
+            <li><a class="link" href="historia.html">Historia</a></li>
+            <li><a class="link" href="gasthamn.html">Gästhamn</a></li>
+            <li><a class="link" href="turistmal.html">Turistmål</a></li>
+            <li><a class="link" href="medlemsinfo.html">Medlemsinfo</a></li>
+            <li><a id="active" href="kontakt.html">Kontakt</a></li>
+            <li><a class="link" href="english.html">English</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div id="container">
+            <h1 class="textShadowGrey">KONTAKT</h1>
+            <div class="mainTextArea">
+                <h2 > Kontaktuppgifter</h2>
+                <div id="contactAndMap">
+                    <div id="contactInf">
+                        <div id="nummer">
+                            <p> Hamnfogde Bo Lautin, mobil 0707-920310 </p>
+                        </div>
+                        <div id="adress">
+                            <p>
+                                Djupviks hamnförening <br/>
+                                c/o Ekholm <br/>
+                                Eksta Hägur 170 <br/>
+                                623 54 Klintehamn
+                            </p>
+                        </div>
+                    </div>
+                    <div id="map" >
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2154.985885938392!2d18.14671131643046!3d57.308102878435605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTfCsDE4JzI5LjIiTiAxOMKwMDgnNTYuMCJF!5e0!3m2!1ssv!2sse!4v1596368106603!5m2!1ssv!2sse" width="300" height="200" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+                </div>
+                
+                <h2> Kontaktformulär </h2>
+                <form action="#" method="POST">
+                    <fieldset>
+                        <legend> Beskrivning av ärendet: </legend>
+                        <p>
+                            <label for="rubrik">Rubrik:</label><br/>
+                            <input type="text" id="rubrik" name="formSubject" />
+                        </p>
+                        <p>
+                            <label for="select"> Ärendet gäller: </label>
+                            <select id="select" name="formAbout">
+                                <option value="berth"> Båtplats </option>
+                                <option value="member"> Medlem </option>
+                                <option value="other"> Övrigt </option>
+                            </select>
+                        </p>
+                        <p>
+                            <label for="meddelande"> Meddelande: *</label><br/>
+                            <textarea id="meddelande" name="formMessage" rows="3" cols="28" required
+                                oninvalid="this.setCustomValidity('Ange meddelande.')"
+                                oninput="this.setCustomValidity('')" ></textarea>
+                        </p>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend> Dina uppgifter: </legend>
+                        <p>
+                            <label>Jag vill bli kontaktad via: </label>
+                            <input type="radio" name="formContact" id="email" value="mail" />
+                            <label for="email">Mail</label>
+                     
+                            <input type="radio" name="formContact" id="telefon" value="phone" />
+                            <label for="telefon">Telefon</label>
+                       
+                            <input type="radio" name="formContact" id="inteAlls" value="notAtAll" />
+                            <label for="inteAlls">Inte alls</label>
+                        </p>
+                        <p>
+                            <label for="namn">Namn:</label><br/>
+                            <input type="text" id="namn" name="name"/>
+                        </p>
+                        <p>
+                            <label for="mobilnummer">Mobilnummer: *</label><br/>
+                            <input type="tel" id="mobilnummer" name="number" required
+                                oninvalid="this.setCustomValidity('Ange telefonnummer.')"
+                                oninput="this.setCustomValidity('')" />
+                        </p>
+                        <p>
+                            <label for="mail">Email: *</label><br/>
+                            <input type="email" id="mail" name="email" required
+                                oninvalid="this.setCustomValidity('Ange mailadress.')"
+                                oninput="this.setCustomValidity('')" />
+                        </p>
+                    </fieldset>
+
+                    <p>
+                        <input type="submit" id="sendButton" value="Skicka" />
+                    </p>
+                </form>
+            </div>
+        </div>
+    </main>
+        
+    <footer>
+        <p class="topLine">&copy; Djupvikshamn.se | info@djupvikshamn.se</p>
+    </footer>
+</body>
+
+</html>

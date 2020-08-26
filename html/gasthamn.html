@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Djupvik</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="../js/smhiWidget.js" type="module"></script>
+    <script src="../js/dropDownMenu.js" type="module"></script>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/smhi_widget.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a class="link" href="../index.html">Djupviks Hamn</a></li>
+            <li><a class="link" href="historia.html">Historia</a></li>
+            <li><a id="active" href="gasthamn.html">Gästhamn</a></li>
+            <li><a class="link" href="turistmal.html">Turistmål</a></li>
+            <li><a class="link" href="medlemsinfo.html">Medlemsinfo</a></li>
+            <li><a class="link" href="kontakt.html">Kontakt</a></li>
+            <li><a class="link" href="english.html">English</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div id="container">
+            <h1 class="textShadowGrey">GÄSTHAMN</h1>
+            <div class="mainTextArea">
+                <h2> Gästhamnen </h2>
+                <p> Gästbåtar är hjärtligt välkomna! 
+                </p>
+                
+                <picture>
+                    <source srcset="../img/Extra/hamn-eva_large.jpg" media="(min-width: 1500px)">
+                    <source srcset="../img/Extra/hamn-eva.jpg" media="(min-width: 750px)">
+                    <source srcset="../img/Extra/hamn-eva_small.jpg" media="(min-width: 450px)">
+                    <img src="../img/Extra/hamn-eva_smallest.jpg" alt="En röd bod och en båt i vattnen vid Djupviks hamn.">
+                </picture>
+
+                <div class ="figureText">Djupviks hamn.</div>
+                <p>
+                    Vid normalvattendjup är djupet 3 meter i huvuddelen av hamnen. Vatten och el finns utdraget på kajerna. I land kan vi erbjuda ett modernt servicehus med WC, dusch och tvättmaskin.
+                </p>
+
+                <div id="pris">
+                    Dygnshyra 150:- /dygn* <br/>
+                    El-anslutning 50:-/dygn 
+                </div>  
+                <div id="smallText">*inkluderat kort för tillträde till servicehuset och 20:- för två duschar </div>
+
+                <p>   
+                    Kontakta oss gärna via <a href="kontakt.html">formuläret</a> eller ring hamnfogden för att få reda på aktuellt läge. <br/>
+                    <span id="hamnfogde">Hamnfogde Bo Lautin, Mobil: 0707 - 92 03 10 </span>
+                </p>     
+              
+                <h2>Vädret i Djupvik</h2>
+                <div id="smhiWidget" ></div>
+                
+            </div>
+        </div>
+    </main>
+        
+    <footer>
+        <p class="topLine">&copy; Djupvikshamn.se | info@djupvikshamn.se</p>
+    </footer>
+</body>
+
+</html>
