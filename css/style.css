@@ -1,0 +1,666 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+
+html, body {
+    margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+    font-size: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    vertical-align: baseline;
+    min-width: 300px;
+    max-width: 2560px;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    width: 100%;
+    background: #E2E1E1;
+    opacity: 0.8;
+}
+
+main {
+    width: 100%;
+    margin: 0 auto;
+    background: url("../img/ostersjon2.jpeg") no-repeat;
+    background-size: cover;
+}
+
+#container {
+    background: rgba(230, 230, 230, 0.7);
+}
+
+h1, h2, h3, p{
+    padding: 1rem;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3rem;
+    margin: 0 auto 5rem;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-align: left;
+    margin: 1rem 0;
+}
+
+h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+time {
+    font-size: 0.85rem;
+    margin: 0 0 2rem 0;
+    padding: 0 1rem;
+}
+
+p { 
+    text-align: left;
+    line-height: 1.6rem;
+}
+
+picture {
+    display: block;
+    text-align: center;
+}
+
+.figureText {
+    text-align: center;
+}
+
+
+#nyheter h3, #nyheter p, #contact h2, #contact p {
+    text-align: left;
+}
+
+.textLeft {
+    text-align: left;
+}
+
+header {
+    background: url(../img/giphy.gif) no-repeat center;
+    background-size: cover;
+}
+
+header h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #ffffff;
+    line-height: 5rem;
+    margin: 0;
+    padding: 0;
+}
+
+#headerFilter {
+    background: rgba(29, 26, 63, 0.3);
+    padding: 10rem 0;
+}
+
+nav {
+    background: #000000;
+    opacity: 0.98;
+    margin: 0;
+    position: sticky;
+    z-index: 1;
+    top: 0;
+}
+
+nav ul {
+    font-weight: bold;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 1.5rem 0;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+
+.link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #ffffffd2;
+    transition: width .3s;
+    margin-top: 0.11rem;
+}
+
+.link:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+
+nav a:focus {
+    font-size: 1.45rem;
+    border-bottom: 2px solid #ffffffd2;
+    outline: none;
+}
+
+#active {
+    font-size: 1.5rem;
+    font-weight: 600;
+    border-bottom: 2px solid #ffffffd2;
+}
+
+a {
+    color: #7e1305;
+    text-decoration: none;
+}
+
+.mainTextArea, #infoText, #nyheter {
+    background: rgba(255,255,255,0.7);
+    width: 50%;
+    position: relative;
+    border-radius: 8px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.mainTextArea {
+    margin: 1rem auto 0;
+    padding: 1rem 2rem 2rem;
+    bottom: 4rem;
+}
+
+#infoText {
+    margin: 0 auto;
+    padding: 2rem;
+    top: 4rem;
+}
+
+#nyheter {
+    margin: 12rem auto 0 auto;
+    padding: 2rem;
+    bottom: 4rem;
+}
+
+.textShadowBlack {
+    text-shadow: 2px 2px 3px rgb(7, 7, 7);
+}
+
+.textShadowGrey {
+    text-shadow: 2px 2px 4px rgb(134, 134, 134);
+}
+
+footer {
+    color: #ffffff;
+    text-align: center;
+    background: #1b1b1b;
+    margin: 0;
+    padding-top: 5rem;
+    position: static;
+    bottom: 0;
+    width: 100%;
+    clear: both;
+}
+
+footer p{
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
+
+.topLine{
+    border-top: thin solid #ffffff;
+}
+
+
+
+/* ---------- Specifikt för sidan "Historia" ---------- */
+#hamnfogde {
+    line-height: 2rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    font-style: italic;
+}
+
+#storyTime {
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+#story {
+    width: 60%;
+}
+
+#nameClarification {
+    font-size: 0.8rem;
+    margin-left: 2rem;
+    margin-top: 1.5rem;
+    border: rgb(25, 27, 32) solid 2px;
+    background-color: rgba(142, 177, 206, 0.281);
+}
+
+td, th {
+    border: rgb(25, 27, 32) solid 1px;
+    padding: 0.4rem 1rem;
+}
+
+th {
+    font-weight: 600;
+}
+
+
+
+/* ---------- Specifikt för sidan "Gästhamn" ---------- */
+#pris {
+    font-size: 1.1rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+    padding: 1rem;
+    margin: 2rem 0 1rem 3rem;
+    background-color: rgba(142, 177, 206, 0.281);
+    border: rgb(121, 121, 121) 1px solid;
+    width: 30%;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+#smallText {
+    font-size: 0.85rem;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+}
+
+
+
+/* ---------- Specifikt för sidan "Turistmål" ---------- */
+#innerContainer {
+    background: url(../img/sunset3.jpeg) no-repeat fixed;
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    margin: 1rem auto 0;
+    border-radius: 8px;
+    position: relative;
+    bottom: 4rem;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+#firstSection, #secondSection {
+    background: rgba(255,255,255,0.98);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+#firstSection {
+    border-radius: 8px 8px 0 0;
+}
+
+#sunsetText {
+    margin: 8rem auto;
+    width: 50%;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#sunsetText p{
+    text-align: center;
+    line-height: 3rem;
+}
+
+#secondSection {
+    border-radius: 0 0 8px 8px;
+}
+
+.carousel {
+    position: relative;
+    height: 425px;
+    width: 50%;
+    margin: 2rem auto 0 auto;
+    padding-bottom: 4rem;
+}
+
+.carousel_trackContainer {
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel_track {
+    padding: 0;
+    margin: 0;
+    position: relative;
+    height: 100%;
+    transition: transform 250ms ease-in;
+}
+
+.carousel_slide {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.carousel_image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.figCaption {
+    background: rgba(255, 255, 255, 0.7);
+    width: 70%;
+    margin: 0 auto;
+    padding: 0.5rem;
+    text-align: center;
+    transform: translateY(-3rem);
+}
+
+.transparentArea {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+.transparentBoth {
+    background: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0.6) 0%,
+        rgba(255, 255, 255, 0) 15%,
+        rgba(255, 255, 255, 0) 85%,
+        rgba(255, 255, 255, 0.6) 100%);
+}
+
+.transparentLeft {
+    background: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0.6) 0%,
+        rgba(255, 255, 255, 0) 15%);
+}
+
+.transparentRight {
+    background: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0) 85%,
+        rgba(255, 255, 255, 0.6) 100%);
+}
+
+.carousel_button {
+    position: absolute;
+    top: 50%;   /* Positions the top of the button at the middle of the height of its parent (container). */
+    transform: translateY(-50%); /* Takes half of the height of the button and moves it up that amount. */
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.carousel_button:hover, .carousel_button:focus {
+    padding: 1.2rem 0.6rem;
+    background: rgba(255, 255, 255, 0.3);
+    outline: none;
+}
+
+.carousel_button--left {
+    left: 0;
+    z-index: 1;
+}
+
+.carousel_button--right {
+    right: 0;
+}
+
+.carousel_nav {
+    display: flex;
+    justify-content: center;
+    padding: 0.1rem 0;
+}
+
+.carousel_indicator {
+    border: 0;
+    border-radius: 50%;
+    height: 0.9rem;
+    width: 0.9rem;
+    background: rgba(0,0,0,.3);
+    margin: 0 0.8rem;
+    cursor: pointer;
+    outline: none;
+}
+
+.carousel_indicator.currentSlide {
+    background: rgba(0,0,0,.75);
+}
+
+.isHidden { display: none; }
+
+
+
+
+/* ---------- Specifikt för sidan "Medlemmar" ---------- */
+#memberTable {
+    margin-bottom: 3rem;
+}
+
+#memberTable th {
+    color: black;
+    font-weight: bold;
+}
+
+.medlemsBilder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.medlemsBilder img{
+    padding: 0 1rem;
+}
+
+
+
+/* ---------- Specifikt för sidan "Kontakt" ---------- */
+#contactAndMap {
+    padding-bottom: 3rem;
+    border-bottom: rgb(119, 119, 119) thin solid;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+#map {
+    margin-left: 15rem;
+}
+
+#adress, #nummer {
+    display: flex;
+}
+
+#nummer::before {
+    content: url(../img/phone2.png);
+    padding: 1rem 0 0rem 1.1rem;
+}
+
+#adress::before {
+    content: url(../img/location2.png);
+    padding: 2rem 0 1rem 1rem;
+}
+
+form {
+    width: 80%;
+}
+
+fieldset {
+    border: black thin solid;
+    margin-bottom: 1rem;
+}
+
+#sendButton {
+    color: white;
+    font-size: 1rem;
+    background: rgb(44, 44, 44);
+    border: black thin solid;
+    border-radius: 2px;
+    padding: 0.5rem 3rem;
+    position: relative;
+    top: -1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+legend {
+    margin-left: 1rem;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+}
+
+#email {
+    margin-left: 1rem;
+}
+
+input[type=text], input[type=tel], input[type=email], textarea, select {
+    border: none;
+    border: black solid thin;
+    background-color: rgb(255, 255, 255);
+    padding: 0.2rem;
+    border-radius: 3px;
+}
+
+select {
+    font-size: 1rem;
+    margin-left: 1rem;
+    padding: 0.1rem;
+}
+
+
+
+/* ---------- Media queries ---------- */
+@media (max-width: 440px) {
+    .mainTextArea, #infoText, #nyheter, #sectionOne, #sectionTwo {
+        width: 100%;
+        padding: 1rem 0;
+    }
+
+    header h1 { font-size: 3rem;}
+
+    h2 { margin: 0; }
+
+    #pris { width: 50%; }
+
+    #smallText { padding: 0 0.5rem; }
+}
+
+@media (max-width: 855px) {
+    form {
+        margin-left: 1rem;
+    }
+
+    .medlemsBilder {
+        display:block;
+        text-align: center;
+    }
+    .medlemsBilder img {
+        padding: 1rem 0;
+    }
+}
+
+@media (max-width: 860px) and (min-width: 320px) {
+    .mainTextArea, #infoText, #nyheter, #firstSection, #secondSection {
+        padding: 1rem 0;
+        width: 100%;
+    }
+    #innerContainer {
+        width: 90%;
+    }
+    #pris { width: 50%;}
+
+    .carousel {
+        height: 158px;
+        width: 50%;
+    }
+}
+
+@media (max-width: 1000px) {
+    nav a {
+        font-size: 1rem;
+    }
+    #sunsetText p {
+        font-size: 1.75rem;
+    }
+    #innerContainer {
+        background-position-x: 50%;
+    }
+
+    #contactAndMap {
+        flex-direction: column;
+    }
+    #map { 
+        margin-left: 0rem;
+    }
+    #map iframe {
+        width: 90%;
+    }
+}
+
+@media (max-width: 1300px) {
+    #storyTime {
+        flex-direction: column;
+    }
+    #story {
+        width: 100%;
+        margin-bottom: 1.5rem;
+    }
+    #nameClarification {
+        margin: 0 auto;
+        width: 80%;
+    }
+    #sunsetText {
+        margin: 5rem auto;
+    }
+
+}
+
+@media (max-width: 1400px) and (min-width: 861px) {
+    .mainTextArea, #infoText, #nyheter, #sectionOne, #sectionTwo, #innerContainer {
+        width: 75%;
+        
+    }
+}
+
+@media (min-width: 861px) and (max-width: 1500px) {
+    .carousel {
+        height: 298px;
+        width: 50%;
+    }
+}
+
+@media (min-width: 1501px) and (max-width: 1950px) {
+    .carousel {
+        height: 350px;
+        width: 50%;
+    }
+
+}
+
+@media(max-width: 1920px) {
+    #headerFilter {
+        padding: 5rem 0;
+    }
+
+    nav a {
+        font-size: 1.1rem;
+    }
+
+    nav a:hover, nav a:focus {
+        font-size: 1.1rem;
+    }
+
+    #active {
+        font-size: 1.1rem;
+    }
+}

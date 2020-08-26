@@ -1,0 +1,106 @@
+#smhiWidget {
+    margin: 0 auto;
+    width: 75%;
+    padding-bottom: 3rem;
+}
+
+table {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+tr {
+    width: 100%;
+    border: solid #1b1b1b 1px;
+    background: white;
+}
+
+th, td {
+    color: black;
+}
+
+th {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-align: center;
+    vertical-align: middle;
+    width: 16.67%;
+    padding: 1rem;
+}
+
+td {
+    text-align: center;
+    vertical-align: middle;
+    width: 16.67%;
+}
+
+#smhiWidget h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#tableHeads {
+    border: none;
+    background: #1b1b1b;
+}
+
+@media (max-width: 1800px) {
+    #smhiWidget {
+        padding-bottom: 3rem;
+        margin-left: 2rem;
+    }
+    
+    th {
+        font-size: 1.1rem;
+    }
+    td {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 1460px) {
+    
+    th {
+        font-size: 0.9rem;
+    }
+    td {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 860px) and (min-width: 521px){
+    #smhiWidget {
+
+        margin: 0 0.5rem;
+    }
+}
+@media (max-width: 860px){
+    #smhiWidget {
+        padding-bottom: 3rem;
+    }
+    th {
+        font-size: 0.7rem;
+        padding: 0.2rem;
+        margin: 0;
+    }
+    td {
+        font-size: 0.7rem;
+        font-weight: bold;
+        padding: 0;
+        margin: 0;
+    }
+}
+
+@media (max-width: 520px) {
+    #smhiWidget {
+        width: 40%;
+        margin: 0 0.1rem;
+    }
+    th, td { font-size: 0.5rem; }
+
+    tr th:nth-child(6),tr td:nth-child(6){
+        display:none;
+    }
+}
